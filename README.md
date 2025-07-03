@@ -6,35 +6,40 @@
 [![Status](https://img.shields.io/badge/status-stable-brightgreen)]()
 [![DIBS Site](https://img.shields.io/badge/website-dibs.ravenhill.cl-purple)](https://dibs.ravenhill.cl)
 
-A minimal command-line application written in **C#**, designed to introduce **MSBuild** and the **.NET CLI** through a clean, idiomatic, and reproducible example. This project accompanies a lesson from the [DIBS course](https://dibs.ravenhill.cl), focused on building well-structured and maintainable software libraries.
+A minimal command-line application written in **C#**, designed to introduce **MSBuild** and the **.NET CLI** through a
+clean, idiomatic, and reproducible example. This project accompanies a lesson from
+the [DIBS course](https://dibs.ravenhill.cl), focused on building well-structured and maintainable software libraries.
 
 > [!note]
-> The course is taught in Spanish, but **all repository content is in English** to ensure accessibility and broader adoption.
+> The course is taught in Spanish, but **all repository content is in English** to ensure accessibility and broader
+> adoption.
 
 ## 📖 Table of Contents
 
 - [echo-app-csharp: A simple C# CLI to understand MSBuild and the .NET ecosystem](#echo-app-csharp-a-simple-c-cli-to-understand-msbuild-and-the-net-ecosystem)
-  - [📖 Table of Contents](#-table-of-contents)
-  - [🎓 Lessons](#-lessons)
-  - [🔍 Overview](#-overview)
-  - [📝 Getting Started](#-getting-started)
-    - [Prerequisites](#prerequisites)
-    - [Clone \& Compile](#clone--compile)
-  - [🤝 Contributing](#-contributing)
-    - [How to Contribute](#how-to-contribute)
-  - [🛡️ License](#️-license)
-  - [🌐 DIBS Website](#-dibs-website)
+    - [📖 Table of Contents](#-table-of-contents)
+    - [🎓 Lessons](#-lessons)
+    - [🔍 Overview](#-overview)
+    - [📝 Getting Started](#-getting-started)
+        - [Prerequisites](#prerequisites)
+        - [Clone \& Compile](#clone--compile)
+    - [🤝 Contributing](#-contributing)
+        - [How to Contribute](#how-to-contribute)
+    - [🛡️ License](#️-license)
+    - [🌐 DIBS Website](#-dibs-website)
 
 ## 🎓 Lessons
 
 This repository is part of the following DIBS course lesson:
 
 - 📘 **[Creating a Basic C# Project with MSBuild](https://dibs.ravenhill.cl/docs/build-systems/init/msbuild)**  
-  Learn how to install .NET, create a console project using MSBuild and `dotnet`, understand the project layout, customize the `.csproj`, and write your first C# program.
+  Learn how to install .NET, create a console project using MSBuild and `dotnet`, understand the project layout,
+  customize the `.csproj`, and write your first C# program.
 
 ## 🔍 Overview
 
-This application is intentionally simple — its purpose is not to showcase complex logic, but to serve as an **educational scaffold** to explore:
+This application is intentionally simple — its purpose is not to showcase complex logic, but to serve as an *
+*educational scaffold** to explore:
 
 - The role of MSBuild and the `.csproj` file
 - The structure of a modern .NET project
@@ -51,7 +56,8 @@ The program simply echoes a fixed phrase — but the lesson is in the setup, not
 - PowerShell (Windows) or a terminal with `bash`
 - Git
 
-> See the [lesson documentation](https://dibs.ravenhill.cl/docs/build-systems/init/msbuild) for OS-specific install scripts.
+> See the [lesson documentation](https://dibs.ravenhill.cl/docs/build-systems/init/msbuild) for OS-specific install
+> scripts.
 
 ### Clone & Compile
 
@@ -69,7 +75,8 @@ Super ultra great delicious wonderful bad
 
 ## 🤝 Contributing
 
-This repository is part of a teaching resource and is not meant for production. That said, issues and improvements are welcome!
+This repository is part of a teaching resource and is not meant for production. That said, issues and improvements are
+welcome!
 
 ### How to Contribute
 
