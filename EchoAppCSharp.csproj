@@ -1,0 +1,75 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <!--
+        Defines global properties for the project.
+        These settings apply to all configurations (Debug/Release).
+    -->
+    <PropertyGroup>
+        <!-- Specifies that the project builds a console executable -->
+        <OutputType>Exe</OutputType>
+
+        <!-- Target the .NET 9.0 framework -->
+        <TargetFramework>net9.0</TargetFramework>
+
+        <!-- Automatically include common namespaces (like System, System.Collections.Generic, etc.) -->
+        <ImplicitUsings>enable</ImplicitUsings>
+
+        <!-- Enable nullable reference type checks for safer code -->
+        <Nullable>enable</Nullable>
+
+        <!-- Use the preview C# language version (C# 13 at the time of .NET 9) -->
+        <LangVersion>preview</LangVersion>
+
+        <!-- Treat all compiler warnings as errors to enforce clean, warning-free builds -->
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+
+        <!-- Generate XML documentation file (e.g., for IntelliSense or library publication) -->
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    </PropertyGroup>
+
+    <!--
+        Properties specific to the Debug build configuration.
+        Adds extra symbols to help during development and debugging.
+    -->
+    <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+        <!-- Define DEBUG and TRACE symbols for conditional compilation -->
+        <DefineConstants>DEBUG;TRACE</DefineConstants>
+    </PropertyGroup>
+
+    <!--
+        Properties specific to the Release build configuration.
+        Enables optimizations and defines TRACE symbol only.
+    -->
+    <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+        <!-- Enable compiler optimizations for performance -->
+        <Optimize>true</Optimize>
+
+        <!-- Define TRACE symbol for logging in release builds -->
+        <DefineConstants>TRACE</DefineConstants>
+    </PropertyGroup>
+
+    <!--
+        NuGet package metadata (only applies if this project is packed).
+        These fields are optional but recommended for public or internal NuGet publication.
+    -->
+    <PropertyGroup>
+        <!-- The title of the NuGet package -->
+        <PackageId>EchoAppCSharp</PackageId>
+
+        <!-- A short description that appears in NuGet Gallery -->
+        <Description>A basic echo application implemented in C# using .NET 9.</Description>
+
+        <!-- Author(s) of the project -->
+        <Authors>Ignacio Slater-Muñoz</Authors>
+
+        <!-- License information (using SPDX identifier) -->
+        <PackageLicenseExpression>BSD-2-Clause</PackageLicenseExpression>
+
+        <!-- The project repository URL -->
+        <RepositoryUrl>https://github.com/r8vnhill/echo-app-csharp</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+
+        <!-- Tags to improve search visibility in NuGet -->
+        <PackageTags>echo;cli;example;learning</PackageTags>
+    </PropertyGroup>
+</Project>
