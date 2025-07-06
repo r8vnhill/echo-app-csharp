@@ -7,7 +7,7 @@
 [![DIBS Site](https://img.shields.io/badge/website-dibs.ravenhill.cl-purple)](https://dibs.ravenhill.cl)
 
 A minimal command-line application written in **C#**, designed to introduce **MSBuild** and the **.NET CLI** through a
-clean, idiomatic, and reproducible example. This project accompanies a lesson from
+clean, idiomatic, and reproducible example. This project accompanies lessons from
 the [DIBS course](https://dibs.ravenhill.cl), focused on building well-structured and maintainable software libraries.
 
 > [!note]
@@ -17,16 +17,16 @@ the [DIBS course](https://dibs.ravenhill.cl), focused on building well-structure
 ## 📖 Table of Contents
 
 - [echo-app-csharp: A simple C# CLI to understand MSBuild and the .NET ecosystem](#echo-app-csharp-a-simple-c-cli-to-understand-msbuild-and-the-net-ecosystem)
-    - [📖 Table of Contents](#-table-of-contents)
-    - [🎓 Lessons](#-lessons)
-    - [🔍 Overview](#-overview)
-    - [📝 Getting Started](#-getting-started)
-        - [Prerequisites](#prerequisites)
-        - [Clone \& Compile](#clone--compile)
-    - [🤝 Contributing](#-contributing)
-        - [How to Contribute](#how-to-contribute)
-    - [🛡️ License](#️-license)
-    - [🌐 DIBS Website](#-dibs-website)
+  - [📖 Table of Contents](#-table-of-contents)
+  - [🎓 Lessons](#-lessons)
+  - [🔍 Overview](#-overview)
+  - [📝 Getting Started](#-getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Clone \& Compile](#clone--compile)
+  - [🤝 Contributing](#-contributing)
+    - [How to Contribute](#how-to-contribute)
+  - [🛡️ License](#️-license)
+  - [🌐 DIBS Website](#-dibs-website)
 
 ## 🎓 Lessons
 
@@ -35,18 +35,19 @@ This repository is part of the following DIBS course lesson:
 - 📘 **[Creating a Basic C# Project with MSBuild](https://dibs.ravenhill.cl/docs/build-systems/init/msbuild)**  
   Learn how to install .NET, create a console project using MSBuild and `dotnet`, understand the project layout,
   customize the `.csproj`, and write your first C# program.
+- 📘 **[Modularizing your C# Project with MSBuild](https://dibs.ravenhill.cl/docs/build-systems/modular-design/msbuild)**
+    Explore how to structure a C# solution with multiple projects, including a reusable library and a console application, using MSBuild for modular design and clean architecture.
 
 ## 🔍 Overview
 
-This application is intentionally simple — its purpose is not to showcase complex logic, but to serve as an *
-*educational scaffold** to explore:
+This application is intentionally simple — its purpose is not to showcase complex logic, but to serve as an **educational scaffold** to explore:
 
-- The role of MSBuild and the `.csproj` file
+- The role of MSBuild and the `.sln` and `.csproj` files
 - The structure of a modern .NET project
 - How the `dotnet` CLI facilitates creation, compilation, and execution
 - Best practices for reproducible builds and configuration
 
-The program simply echoes a fixed phrase — but the lesson is in the setup, not the output.
+The program simply echoes messages passed as arguments — but the lesson is in the setup, not the output.
 
 ## 📝 Getting Started
 
@@ -64,13 +65,16 @@ The program simply echoes a fixed phrase — but the lesson is in the setup, not
 ```bash
 git clone https://github.com/r8vnhill/echo-app-csharp.git
 cd echo-app-csharp
-dotnet run
-````
+dotnet run --project EchoApp -- `
+    "Is this the end of the beginning", `
+    "or the beginning of the end?"
+```
 
 You should see:
 
 ```
-Super ultra great delicious wonderful bad
+Is this the end of the beginning
+or the beginning of the end?
 ```
 
 ## 🤝 Contributing
@@ -81,7 +85,7 @@ welcome!
 ### How to Contribute
 
 1. [Open an issue](https://github.com/r8vnhill/echo-app-csharp/issues) to suggest improvements or report errors.
-2. Follow the [Code of Conduct](./CODE_OF_CONDUCT.md).
+2. Follow the [Code of Conduct](./CONTRIBUTING.md).
 3. Fork this repo and submit a pull request.
 
 ## 🛡️ License
