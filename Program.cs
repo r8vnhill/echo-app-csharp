@@ -1,1 +1,0 @@
-﻿Console.WriteLine("Super ultra great delicious wonderful bad");
